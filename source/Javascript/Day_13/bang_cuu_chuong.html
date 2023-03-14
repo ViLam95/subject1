@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>bảng cửu chương số 5</title>
+    <title>Bảng cửu chương</title>
 </head>
 <body>
 <script>
-
-  document.write("bảng cửu chương 5:"+"<br>")
-  for (i=1; i<=10; i++){
-      document.write(5+ "*" + i + "="  +5*i+  "<br>")
-  }
-
+    let data = "<table border='1' style='background-color: cyan'>"
+        for ( let i=2 ; i<=10 ;i++){
+            data += "<tr>"
+            for ( let a=1 ; a<=10 ;a++){
+                data += "<td>"+ i +"x"+ a +"="+ (i*a) +"</td>"
+            }
+            data += "</tr>"
+        }
+        data += "</table>"
+    document.write(data)
 </script>
+
 </body>
 </html>

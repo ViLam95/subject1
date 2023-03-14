@@ -1,5 +1,6 @@
-function result(){
-    let r = document.getElementById("radius").value;
-    let c = 2*3.14*r;
-    document.getElementById("circumference").innerText = c
+function calculate() {
+    var radius=prompt("Please enter the size of the radius","");
+    var pi=3.14159265359;
+    var circ=2*pi*radius;
+    var d=alert("The circumference of a circle with radius "+radius+" is "+circ+".")
 }
