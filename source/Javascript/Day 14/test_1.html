@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhập số bất kỳ</title>
+</head>
+<body>
+
+<script>
+  //cách 1:
+
+      let i = document.getElementById("calculate").value;
+      do {
+          if (i !== "even") {
+              break;
+          }
+          if (i % 2 === 0) {
+              document.getElementById(" calculate").value = "Hello";
+          } else {
+              document.getElementById("calculate").value = "Nhap lai";
+          }
+
+      } while (i > 0);
+  //cách :
+// let number = +prompt('nhap so:');
+// while (number !== -1){
+//   if (number % 2 ===0){
+//     alert("hello");
+//     break;
+//   }else{
+//     number = +prompt("nhap so:")
+//   }
+// }
+  //cách 3:
+
+</script>
+
+</body>
+</html>

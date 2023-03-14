@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+  let doC
+  do {
+    doC = +prompt("input")
+    if (doC >= 20 && doC <= 100) {
+      alert('nhiet do hop ly')
+
+    } else if (doC < 20) {
+      alert('tang nhiet do')
+    } else if (doC > 100) {
+      alert('giam nhiet do xuong');
+    }
+  }while(doC < 20 || doC >100)
+</script>
+</body>
+</html>
