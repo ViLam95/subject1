@@ -7,25 +7,44 @@
 </head>
 <body>
 <script>
-let number = parseInt(prompt('Nhập n số nguyên tố:'));
-let count = 0 ;
-let countSNT = 0;
-    for (let n=2 ; n <=100; n++){
-        if (countSNT < number) {
-            for (let i = 1; i<=n; i++){
-                if (n % i===0){
-                    count+=1;
-                }
-            }
-            if (count===2){
-                document.write(n + "<br>")
-                countSNT += 1;
-            }
-            count = 0
-        }
-        else {
-            break;}
+// let number = parseInt(prompt('Nhập n số nguyên tố:'));
+// let count = 0 ;
+// let countSNT = 0;
+//     for (let n=2 ; n <=100; n++){
+//         if (countSNT < number) {
+//             for (let i = 1; i<=n; i++){
+//                 if (n % i===0){
+//                     count+=1;
+//                 }
+//             }
+//             if (count===2){
+//                 document.write(n + "<br>")
+//                 countSNT += 1;
+//             }
+//             count = 0
+//         }
+//         else {
+//             break;}
+//     }
+// cách 2:
+// Nhập vaò 1 số nguyên, kiểm tra số nguyên đó có phải là số nguyên tố hay không
+// SNT là số chỉ duy nhất 2 ước là 1 và chính nó.
+//  => kiểm tra xem trong khoảng 2 => n-1 có ước hay không ?
+// => đếm số ước trong 2 => n-1;
+//  nhập
+let soNguyen = +prompt("Mời bạn nhập:");
+let count = 0
+for(let i = 2; i <= soNguyen-1; i++){
+    if(soNguyen % 1 ===0){
+        count++;
+        break;
     }
+}
+if(count <=0){
+    document.write("Là số nguyên tố");
+}else {
+    document.write("Không là số nguyên tố");
+}
 </script>
 </body>
 </html>

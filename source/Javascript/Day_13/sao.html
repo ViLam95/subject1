@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--//<div id="result"></div><br>-->
+<!--//<div id="ketqua"></div><br>-->
+<!--<div id="phaiduoi"></div><br>-->
+<div id="phaiduoi"></div><br>
+<!--//<button onclick="m1()">Bấm</button>-->
+<!--//<button onclick="m2()">Bấm</button>-->
+<button onclick="m3()">Bấm</button>
+<!--//<button onclick="m4()">Bấm</button>-->
+
+<script>
+  //tam giấc vuông dưới trái.
+// function m1(){
+//       let data = ""
+//     for (let i = 0; i < 5; i++){
+//         for (let j = 0; j <=i; j++){
+//          data += "* "
+//              }data += "<br>"
+//         }
+//     document.getElementById("result").innerHTML = data
+//   }
+// function m2() {
+//     let data1 = ""
+//     for (let i = 0; i < 5; i++) {
+//         for (let j = 5; j > i; j--) {
+//             data1 += "* "
+//         }
+//         data1 += "<br>"
+//     }
+//     document.getElementById("ketqua").innerHTML = data1
+// }
+// tam giác phải dưới
+  function m3(){
+    let data2 = ""
+     for (let i = 5; i >= 1; i++){
+         for (let j = 0; j > i; j--){
+             if (i < 5){
+                 data2 += "&nbsp";
+             }else {
+                 data2 += "* "
+             }
+         }
+     }
+    document.getElementById("phaiduoi").innerHTML = data2
+  }
+</script>
+</body>
+</html>

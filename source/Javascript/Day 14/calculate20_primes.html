@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính 20 số nguyên tố</title>
+</head>
+<body>
+<script !src="">
+    // Tính tổng 20 SNT đầu tiên(mặc định 1 không là SNT);
+    // Ý tưởng:
+    // + Có 1 biến đếm lưu số lượng SNT mình đã tìm được
+    // + Có 1 biến tổng để tính tổng số SNT
+    // Với mỗi SNT mình tìm được ta cộng vào biến tổng
+    // let count = 0, total = 0;
+    // for(let i = 1; i<=10000; i++){
+    //     if(count >= 20){ // kiểm tra xem đã tìm được 20 SNT chưa
+    //         // Nếu thỏa mãn ta thoát vòng lặp
+    //         break;
+    //     }
+    //     // tìm số nguyên tố
+    //     let soUoc = 0;
+    //     for(let j = 1; j <= i; j++){
+    //         if(i % j === 0){ // nếu j là ước của i
+    //             soUoc++;
+    //         }
+    //     }
+    //     if(soUoc === 2){
+    //         console.log(i);
+    //         count++;
+    //         total+= i;
+    //     }
+    // }
+    // document.write("Tổng 20 SNT đầu tiên là : " + total);
+
+
+
+    // Dùng while
+    let count = 0, total = 0;
+    let soNguyenBanDau = 2;
+    do{
+        // Kiểm tra xem soNguyenBanDau có là SNT không?
+        let soUoc = 0;
+        for(let j = 1; j <= soNguyenBanDau; j++){// soNguyenBanDau = 1000
+            if(soNguyenBanDau % j === 0){ // nếu j là ước của soNguyenBanDau
+                soUoc++;
+            }
+        }
+        if(soUoc === 2){
+            console.log(soNguyenBanDau);
+            count++;
+            total+= soNguyenBanDau;
+        }
+
+        // Tăng soNguyenBanDau lên 1 đơn vị để kiểm tra tiếp
+        soNguyenBanDau++;
+    }while(count < 20)
+    document.write("Tổng 20 SNT đầu tiên là : " + total);
+
+</script>
+</body>
+</html>
